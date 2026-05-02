@@ -9,7 +9,7 @@ from diagrams.onprem.container import Docker
 from diagrams.onprem.vcs import Github
 from diagrams.aws.compute import ECS, Fargate
 from diagrams.aws.network import ELB
-from diagrams.aws.storage import ECR
+from diagrams.aws.EC2ContainerRegistry import ECR
 
 with Diagram("CI/CD Pipeline", filename="ci_cd_pipeline", show=False):
     repo = Github("GitHub Repo")
